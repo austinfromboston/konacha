@@ -31,6 +31,7 @@ the asset pipeline and engines.}
   gem.add_development_dependency "rspec-rails", "~> 3.1"
   gem.add_development_dependency "capybara-firebug", "~> 1.1"
   gem.add_development_dependency "coffee-script"
+  gem.add_development_dependency "jsx"
   gem.add_development_dependency "ejs"
   gem.add_development_dependency "tzinfo"
   gem.add_development_dependency "selenium-webdriver"

@@ -14,5 +14,6 @@ module Dummy
     config.assets.enabled = true
     config.assets.version = '1.0'
     config.assets.paths << Rails.root.join("spec/isolated/errors").to_s
+    config.assets.paths << React::Source.bundled_path_for('').to_s
   end
 end

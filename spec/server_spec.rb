@@ -23,6 +23,12 @@ describe Konacha::Server, :type => :feature do
     page.should have_css(".test.pass", :count => 2)
   end
 
+  it "serves an individual JSX spec" do
+    visit "/test_element_jsx_spec"
+    page.should have_content("TestElement (jsx)")
+    page.should have_css(".test.pass")
+  end
+
   it "serves a spec in a subdirectory" do
     visit "/subdirectory/subdirectory_spec"
     page.should have_content("spec in subdirectory")

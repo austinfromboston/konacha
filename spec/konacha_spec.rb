@@ -28,6 +28,7 @@ describe Konacha do
 
     it "returns an array of paths relative to spec_dir" do
       subject.should include("array_sum_js_spec.js")
+      subject.should include("test_element_jsx_spec.jsx")
       subject.should include("array_sum_cs_spec.js.coffee")
     end
 
@@ -120,6 +121,7 @@ describe Konacha do
 
       it 'has specs from spec/javascripts' do
         subject.should include("array_sum_js_spec.js")
+        subject.should include("test_element_jsx_spec.jsx")
         subject.should include("array_sum_cs_spec.js.coffee")
       end
 

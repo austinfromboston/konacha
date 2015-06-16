@@ -9,6 +9,7 @@ require "rspec/rails"
 # Preload to avoid occasional tilt warnings about thread safety
 require "coffee_script"
 require "ejs"
+require "jsx/tilt"
 
 require "capybara/rails"
 require "capybara/firebug"

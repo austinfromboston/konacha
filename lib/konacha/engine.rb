@@ -48,6 +48,7 @@ module Konacha
       spec_dirs = [options.spec_dir].flatten
       app.config.assets.paths += spec_dirs.map{|d| app.root.join(d).to_s}
       app.config.assets.raise_runtime_errors = false
+      app.assets.register_engine '.jsx', JSX::Template
     end
   end
 end
